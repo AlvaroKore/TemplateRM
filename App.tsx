@@ -1,5 +1,5 @@
 // In App.js in a new project
-import "./src/configPW"
+import './src/configPW';
 import * as React from 'react';
 import {View, Text, Button} from 'react-native';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
@@ -8,65 +8,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {TextInput} from 'react-native-gesture-handler';
-import { MyVideo } from './components/MyVideo';
-import { LogBox } from 'react-native';
+import {MyVideo} from './src/components/MyVideo';
+import {LogBox} from 'react-native';
+import {PrivateNavigation} from './src/navigation/PrivateNavigation';
 
 LogBox.ignoreLogs([
-  "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
+  "[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
 ]);
-
-const Drawer = createDrawerNavigator();
-const Tab = createBottomTabNavigator();
-const HomeStack = createNativeStackNavigator();
-
-function MyDrawer() {
-  return (
-    <Drawer.Navigator screenOptions={{headerShown: true}}>
-      <Drawer.Screen name="Feed" component={MyTabNavigator} />
-      <Drawer.Screen name="Article" component={Aboutcreen} />
-    </Drawer.Navigator>
-  );
-}
-
-function MyTabNavigator() {
-  return (
-    <Tab.Navigator screenOptions={{headerShown: false}}>
-      <Tab.Screen name="Home" component={HomeStackScreen} />
-    </Tab.Navigator>
-  );
-}
-
-function HomeStackScreen() {
-  return (
-    <HomeStack.Navigator>
-      <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
-      <HomeStack.Screen name="SettingsScreen" component={SettingsScreen} />
-    </HomeStack.Navigator>
-  );
-}
-
-function HomeScreen() {
-  const navigation = useNavigation<any>();
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Home Screen</Text>
-      <MyVideo />
-      <TextInput />
-      <Button
-        title="go"
-        onPress={() => navigation.navigate('SettingsScreen')}
-      />
-    </View>
-  );
-}
-
-function Aboutcreen() {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>About Screen</Text>
-    </View>
-  );
-}
 
 function SettingsScreen() {
   return (
@@ -81,7 +29,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <MyDrawer />
+      <PrivateNavigation />
     </NavigationContainer>
   );
 }

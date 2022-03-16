@@ -1,4 +1,4 @@
-package com.navegacionapp;
+package com.inotyapp;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1002066116650",
-    "project_id": "inotyapp-c4129",
-    "storage_bucket": "inotyapp-c4129.appspot.com"
+    "project_number": "617074627993",
+    "project_id": "testpushwosh-2c03a",
+    "storage_bucket": "testpushwosh-2c03a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1002066116650:android:cf50b93f4deabc274d4353",
+        "mobilesdk_app_id": "1:617074627993:android:0c691aebd383721296ef08",
         "android_client_info": {
-          "package_name": "com.navegacionapp"
+          "package_name": "com.inotyapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1002066116650-l03gsf65jsiq7me9anqor00s5qpfh1i9.apps.googleusercontent.com",
+          "client_id": "617074627993-uios0gbc3q9cb9q1bls0hqfk0gj97hh1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDl_K2qy9nFusbZ8hvSTy0Uu1sQ5Q6Kz4E"
+          "current_key": "AIzaSyA7m67jbB6T3nLOtcycMMKYCmobmtsQpcU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1002066116650-l03gsf65jsiq7me9anqor00s5qpfh1i9.apps.googleusercontent.com",
+              "client_id": "617074627993-uios0gbc3q9cb9q1bls0hqfk0gj97hh1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

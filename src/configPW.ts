@@ -2,8 +2,8 @@ import Pushwoosh from 'pushwoosh-react-native-plugin';
 import {DeviceEventEmitter} from 'react-native';
 Pushwoosh.init(
   {
-    pw_appid: 'FFCF4-BB839',
-    project_number: '1002066116650',
+    pw_appid: 'E31F4-91BEE',
+    project_number: '617074627993',
   },
   () => {
     console.log('Pushwoosh configurado con exito');

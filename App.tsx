@@ -1,5 +1,5 @@
 // In App.js in a new project
-
+import "./src/configPW"
 import * as React from 'react';
 import {View, Text, Button} from 'react-native';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
@@ -9,6 +9,11 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {TextInput} from 'react-native-gesture-handler';
 import { MyVideo } from './components/MyVideo';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreLogs([
+  "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
+]);
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();

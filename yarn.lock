@@ -5640,6 +5640,11 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
+pushwoosh-react-native-plugin@^6.1.12:
+  version "6.1.12"
+  resolved "https://registry.yarnpkg.com/pushwoosh-react-native-plugin/-/pushwoosh-react-native-plugin-6.1.12.tgz#cfea60fa052fbf3eee8f609aa25217a0676787ed"
+  integrity sha512-eIz7zDoGxHR3oAz9J64z22xYoAUPK76ExXqRTJkPYbrthmb8LsdPRcXb/KJzCeit8GwEcXd5hl0+CivoBR93+g==
+
 query-string@^7.0.0:
   version "7.1.1"
   resolved "https://registry.npmjs.org/query-string/-/query-string-7.1.1.tgz"

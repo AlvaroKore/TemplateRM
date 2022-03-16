@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1002066116650",
+    "project_id": "inotyapp-c4129",
+    "storage_bucket": "inotyapp-c4129.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002066116650:android:cf50b93f4deabc274d4353",
+        "android_client_info": {
+          "package_name": "com.navegacionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002066116650-l03gsf65jsiq7me9anqor00s5qpfh1i9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl_K2qy9nFusbZ8hvSTy0Uu1sQ5Q6Kz4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002066116650-l03gsf65jsiq7me9anqor00s5qpfh1i9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

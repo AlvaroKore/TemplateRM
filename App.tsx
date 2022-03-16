@@ -8,6 +8,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {TextInput} from 'react-native-gesture-handler';
+import { MyVideo } from './components/MyVideo';
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
@@ -44,6 +45,7 @@ function HomeScreen() {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Home Screen</Text>
+      <MyVideo />
       <TextInput />
       <Button
         title="go"

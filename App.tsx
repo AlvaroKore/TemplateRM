@@ -2,6 +2,8 @@
 import './src/configPW';
 import * as React from 'react';
 import {LogBox} from 'react-native';
+import RNBootSplash from 'react-native-bootsplash';
+
 import {NavigationContainer} from '@react-navigation/native';
 import ReactArrayToTree from 'react-array-to-tree';
 import {PrivateNavigation} from './src/navigation/PrivateNavigation';
@@ -13,7 +15,7 @@ LogBox.ignoreLogs([
 
 function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer  onReady={() => RNBootSplash.hide()}>
       <AppState>
         <PrivateNavigation />
       </AppState>

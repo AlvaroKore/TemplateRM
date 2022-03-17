@@ -2,6 +2,10 @@ package com.inotyapp;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
+import com.facebook.react.ReactActivityDelegate; // <- add this necessary import
+
+import com.zoontek.rnbootsplash.RNBootSplash;
+
 
 
 public class MainActivity extends ReactActivity {
@@ -18,5 +22,20 @@ public class MainActivity extends ReactActivity {
   @Override
 protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(null);
+
+  }
+
+
+  @Override
+  protected ReactActivityDelegate createReactActivityDelegate() {
+    return new ReactActivityDelegate(this, getMainComponentName()) {
+
+      @Override
+      protected void loadApp(String appKey) {
+        RNBootSplash.init(MainActivity.this); // <- initialize the splash screen
+        super.loadApp(appKey);
+      }
+    };
+  }
 }
-}
+

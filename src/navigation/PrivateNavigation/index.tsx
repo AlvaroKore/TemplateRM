@@ -1,6 +1,7 @@
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import React from 'react';
 import { ImagenScreen } from '../../screens/ImagenScreen';
+import { SelectFileScreen } from '../../screens/SelectFileScreen';
 import { VideoScreen } from '../../screens/VideoScreen';
 import { TabNavigation } from './TabNavigation';
 
@@ -12,6 +13,7 @@ export const PrivateNavigation = () => {
       <Drawer.Screen name="TabScreen" component={TabNavigation} />
       <Drawer.Screen name="Video Player" component={VideoScreen} />
       <Drawer.Screen name="Imagen" component={ImagenScreen} />
+      <Drawer.Screen name="Select File" component={SelectFileScreen} />
     </Drawer.Navigator>
   );
 };

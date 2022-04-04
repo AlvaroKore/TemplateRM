@@ -19,6 +19,8 @@ Pushwoosh.getPushToken((token: string) => {
 
 Pushwoosh.register();
 
+
+
 DeviceEventEmitter.addListener('pushReceived', (e: Event) => {
   console.warn('pushReceived: ' + JSON.stringify(e));
 });
@@ -26,3 +28,6 @@ DeviceEventEmitter.addListener('pushReceived', (e: Event) => {
 DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
   console.warn('pushOpened: ' + JSON.stringify(e));
 });
+
+
+// Pushwoosh.setShowPushnotificationAlert(false);
